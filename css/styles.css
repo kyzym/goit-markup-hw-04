@@ -43,6 +43,7 @@ img {
   --hero-color: #fff;
   --foot-sub-color: rgba(255, 255, 255, 0.6);
   --btn-hover-color: #188ce8;
+  --overlay-bg-color: rgba(47, 48, 58, 0.4);
 
   --card-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -162,7 +163,16 @@ img {
 
   padding-top: 200px;
   padding-bottom: 200px;
+  /* add backgroung image */
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: linear-gradient(var(--overlay-bg-color), var(--overlay-bg-color)),
+    url(../images/hero.jpg);
 }
+
 .hero-title {
   color: var(--hero-color);
   letter-spacing: 0.06em;
@@ -390,3 +400,14 @@ p {
   padding: 0;
   margin: 0;
 }
+
+/* overlay */
+
+/* .overlay {
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/hero.jpg);
+  outline: 1px solid palegreen;
+} */
