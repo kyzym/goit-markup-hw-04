@@ -46,7 +46,7 @@ img {
   --overlay-bg-color: rgba(47, 48, 58, 0.4);
   --icon-bg-color: rgba(245, 244, 250, 1);
 
-  --card-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  --card-people-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   --btn-filter-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -56,6 +56,10 @@ img {
 
   --card-margin: 30px;
   --card-border: 1px solid #eee;
+  --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  --icon-nohover-color: rgba(175, 177, 184, 1);
 }
 
 .section {
@@ -140,6 +144,30 @@ img {
 .adress .item:not(:last-child) {
   margin-right: 50px;
 }
+/* .phone::before {
+  width: 10px;
+  margin-right: 10px;
+
+  content: '';
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/smartphone.svg);
+}
+
+.mail::before {
+  width: 16px;
+  margin-right: 10px;
+
+  content: '';
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/envelope.svg);
+} */
+
 .adress a {
   color: var(--sub-text-color);
   letter-spacing: 0.02em;
@@ -286,7 +314,7 @@ img {
 }
 .our-peoples .item {
   text-align: center;
-  box-shadow: var(--card-box-shadow);
+  box-shadow: var(--card-people-shadow);
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
@@ -310,6 +338,29 @@ img {
 .command-roles {
   font-size: 16px;
   line-height: 1.19;
+}
+.icon {
+  border-radius: 50%;
+  background-color: #000;
+  width: 44px;
+  height: 44px;
+}
+
+/* Our clients */
+.clients {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.client {
+  display: flex;
+  border: 1px solid var(--icon-nohover-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+}
+.clients-list:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* footer */
@@ -411,6 +462,11 @@ img {
   border-bottom: var(--card-border);
   border-left: var(--card-border);
 }
+.card-link:hover,
+.card-link:focus {
+  display: inline-block;
+  box-shadow: var(--card-shadow);
+}
 
 .container {
   width: 1200px;
@@ -428,14 +484,3 @@ p {
   padding: 0;
   margin: 0;
 }
-
-/* overlay */
-
-/* .overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../images/hero.jpg);
-  outline: 1px solid palegreen;
-} */
