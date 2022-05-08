@@ -458,14 +458,13 @@ social-list:hover {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  fill: var(--icon-nohover-color);
+  fill: var(--hero-color);
   justify-content: center;
   align-items: center;
 }
 
 .icon-foot:hover,
 .icon-foot:focus {
-  fill: var(--hero-color);
   background-color: var(--accent-color);
 }
 
