@@ -239,34 +239,24 @@ img {
 .features {
   display: flex;
 }
+.features-item {
+  width: 270px;
+}
+
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
-.features-item::before {
-  content: '';
-  display: block;
+
+.features-icon {
+  background-color: var(--icon-bg-color);
   height: 120px;
   margin-bottom: 30px;
 
-  /* 4 icons*/
-  background-size: contain;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--icon-bg-color);
-}
+  display: flex;
 
-.icon-ant::before {
-  background-image: url(../images/antenna.svg);
-}
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-.icon-plan::before {
-  background-image: url(../images/comp.svg);
-}
-.icon-cosm::before {
-  background-image: url(../images/cosm.svg);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
 .features-title {
