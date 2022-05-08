@@ -297,7 +297,6 @@ img {
 /* our command */
 .social-network {
   display: flex;
-  outline: 1px solid red;
   width: 206px;
   height: 44px;
 }
@@ -306,9 +305,13 @@ img {
   display: flex;
 }
 
-.social-list {
-  display: flex;
+/* .social-list {
+  margin: 0;
+} */
+
+social-list:hover {
 }
+
 .social-list:not(:last-child) {
   margin-right: 10px;
 }
@@ -346,10 +349,20 @@ img {
 }
 
 .icon {
-  background-color: #000;
+  display: flex;
+
   border-radius: 50%;
   width: 44px;
   height: 44px;
+  fill: var(--icon-nohover-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.icon:hover,
+.icon:focus {
+  background-color: var(--accent-color);
+  fill: var(--hero-color);
 }
 
 /* Our clients */
