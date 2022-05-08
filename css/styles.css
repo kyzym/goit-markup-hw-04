@@ -60,6 +60,7 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 
   --icon-nohover-color: rgba(175, 177, 184, 1);
+  --icon-foot-color: rgba(255, 255, 255, 0.1);
 }
 
 .section {
@@ -377,7 +378,17 @@ social-list:hover {
   border-radius: 4px;
   width: 170px;
   height: 92px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--icon-nohover-color);
 }
+
+.client:hover,
+.client:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
+
 .clients-list:not(:last-child) {
   margin-right: 30px;
 }
@@ -410,6 +421,50 @@ social-list:hover {
 
 .foot-mail {
   margin-bottom: 9px;
+}
+
+.foot-add {
+  color: var(--hero-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.footer-contacts {
+  display: inline-block;
+}
+
+.add-please {
+  flex-direction: column;
+  width: 206px;
+  height: 80px;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.footer-adr-container {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.icon-foot {
+  display: flex;
+  background-color: var(--icon-foot-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  fill: var(--icon-nohover-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-foot:hover,
+.icon-foot:focus {
+  fill: var(--hero-color);
+  background-color: var(--accent-color);
 }
 
 /* portfolio */
