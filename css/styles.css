@@ -137,36 +137,31 @@ img {
 }
 
 /* site adr */
+
+.address-icon:hover {
+  fill: var(--accent-color);
+}
+.adr-svg {
+  margin-right: 10px;
+}
+
+.address-icon {
+  display: flex;
+  align-items: center;
+
+  fill: var(--sub-test-color);
+}
+
 .adress {
   display: flex;
   margin-left: auto;
+  justify-content: flex-end;
+  align-items: center;
 }
+
 .adress .item:not(:last-child) {
   margin-right: 50px;
 }
-/* .phone::before {
-  width: 10px;
-  margin-right: 10px;
-
-  content: '';
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/smartphone.svg);
-}
-
-.mail::before {
-  width: 16px;
-  margin-right: 10px;
-
-  content: '';
-  display: block;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url(../images/envelope.svg);
-} */
 
 .adress a {
   color: var(--sub-text-color);
@@ -210,6 +205,7 @@ img {
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+
   text-transform: uppercase;
 
   margin-bottom: 30px;
@@ -305,8 +301,22 @@ img {
 }
 
 /* our command */
+.social-network {
+  display: flex;
+  outline: 1px solid red;
+  width: 206px;
+  height: 44px;
+}
+
 .our-peoples {
   display: flex;
+}
+
+.social-list {
+  display: flex;
+}
+.social-list:not(:last-child) {
+  margin-right: 10px;
 }
 
 .our-peoples .item:not(:last-child) {
@@ -338,10 +348,12 @@ img {
 .command-roles {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
 }
+
 .icon {
-  border-radius: 50%;
   background-color: #000;
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 }
