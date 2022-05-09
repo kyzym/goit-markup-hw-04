@@ -438,13 +438,11 @@ social-list:hover {
 
 .add-please {
   flex-direction: column;
-  width: 206px;
-
-  margin-top: 12px;
 }
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-adr-container {
